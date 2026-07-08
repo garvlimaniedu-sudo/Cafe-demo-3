@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aura Cafe — Coffee, Quietly Done Well</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="pill-nav" id="pillNav">
+  <a href="#hero" class="pill-logo">A</a>
+  <div class="pill-nav-items">
+    <a href="#story" class="pill-link">Story</a>
+    <a href="#menu" class="pill-link">Menu</a>
+    <a href="#gallery" class="pill-link">Gallery</a>
+    <a href="#why" class="pill-link">Why Aura</a>
+    <a href="#visit" class="pill-link">Visit</a>
+  </div>
+  <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+    <span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#story">Story</a>
+  <a href="#menu">Menu</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#why">Why Aura</a>
+  <a href="#visit">Visit</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <canvas id="darkVeil"></canvas>
+  <div class="hero-content">
+    <span class="gold-tag">Est. 2024 · Now Open</span>
+    <h1 class="hero-title" id="heroTitle">
+      <span class="line">Coffee,</span>
+      <span class="line">quietly</span>
+      <span class="line accent">done well.</span>
+    </h1>
+    <p class="hero-sub">A small, still room for slow mornings — Aura Cafe.</p>
+    <a href="#menu" class="btn-gold">Explore the Menu</a>
+  </div>
+  <div class="scroll-hint">
+    <span></span>
+  </div>
+</section>
+
+<!-- ===== OUR STORY ===== -->
+<section class="section light" id="story">
+  <div class="container split">
+    <div class="split-text reveal">
+      <span class="eyebrow">Our Story</span>
+      <h2 class="section-title">Made for the pause<br>between moments.</h2>
+      <p class="reveal-copy">
+        Aura Cafe began as a quiet idea: that a cup of coffee deserves the same
+        care as anything else you slow down for. Every detail here, the light,
+        the ceramics, the hush between tables, is chosen so you have one fewer
+        reason to rush.
+      </p>
+      <p class="reveal-copy">
+        We roast in small batches, pour with intention, and keep the room as
+        calm as the coffee is strong.
+      </p>
+    </div>
+    <div class="tilt-card-wrap">
+      <div class="tilt-card" id="tiltCard">
+        <img src="https://i.ibb.co/S74mqGsc/file-000000001a587207b367a1e862295083.png" alt="Barista pouring latte art at Aura Cafe">
+        <div class="tilt-caption">Poured with intention</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU HIGHLIGHTS ===== -->
+<section class="section dark" id="menu">
+  <div class="container">
+    <span class="eyebrow">Menu Highlights</span>
+    <h2 class="section-title center">A few of our favorites</h2>
+    <div class="bento-grid" id="bentoGrid">
+      <div class="bento-card span-2" data-glow>
+        <img src="https://i.ibb.co/XZhkqNPS/file-00000000c998720792bac704124b0763.png" alt="Signature cappuccino with rose garnish">
+        <div class="bento-info">
+          <span class="bento-label">Signature</span>
+          <h3>Golden Rose Cappuccino</h3>
+          <p>House espresso, silked milk, a whisper of dried rose.</p>
+        </div>
+      </div>
+      <div class="bento-card" data-glow>
+        <img src="https://i.ibb.co/rKN7qkCR/file-00000000fe287207a1c3a4fb2d2a2575.png" alt="Espresso in gold rim cup">
+        <div class="bento-info">
+          <span class="bento-label">Classic</span>
+          <h3>Espresso</h3>
+        </div>
+      </div>
+      <div class="bento-card" data-glow>
+        <img src="https://i.ibb.co/1t5NkHxs/file-00000000f5ac720795ae8d657a846a70.png" alt="Matcha latte with latte art">
+        <div class="bento-info">
+          <span class="bento-label">Ceremonial</span>
+          <h3>Matcha Latte</h3>
+        </div>
+      </div>
+      <div class="bento-card" data-glow>
+        <img src="https://i.ibb.co/Ng6xwYSN/file-000000006dd8720792129b40d506e16f.png" alt="Cold brew in glass">
+        <div class="bento-info">
+          <span class="bento-label">Slow-Steeped</span>
+          <h3>Cold Brew</h3>
+        </div>
+      </div>
+      <div class="bento-card span-2" data-glow>
+        <img src="https://i.ibb.co/Ng1BjRT5/file-00000000853872079901f4f7799d6688.png" alt="Croissant on plate">
+        <div class="bento-info">
+          <span class="bento-label">Bakery</span>
+          <h3>Butter Croissant</h3>
+          <p>Laminated daily, gone by noon.</p>
+        </div>
+      </div>
+      <div class="bento-card" data-glow>
+        <img src="https://i.ibb.co/fVzFkrGV/file-00000000f85c7207b62021490ab4b782.png" alt="Pistachio spiral pastry">
+        <div class="bento-info">
+          <span class="bento-label">Bakery</span>
+          <h3>Pistachio Sable</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="section dark no-pad" id="gallery">
+  <div class="container">
+    <span class="eyebrow">Gallery</span>
+    <h2 class="section-title center">A look inside</h2>
+  </div>
+  <div class="gallery-track" id="galleryTrack">
+    <img src="https://i.ibb.co/F24TjmR/file-0000000003807207a679de8185b9b081.png" alt="Cafe bar interior">
+    <img src="https://i.ibb.co/rKN7qkCR/file-00000000fe287207a1c3a4fb2d2a2575.png" alt="Espresso cup">
+    <img src="https://i.ibb.co/8DdhP0wr/file-00000000d8407209a57ae5a874c588d7.png" alt="Croissant">
+    <img src="https://i.ibb.co/XZhkqNPS/file-00000000c998720792bac704124b0763.png" alt="Cappuccino with rose">
+    <img src="https://i.ibb.co/1t5NkHxs/file-00000000f5ac720795ae8d657a846a70.png" alt="Matcha latte">
+    <img src="https://i.ibb.co/fVzFkrGV/file-00000000f85c7207b62021490ab4b782.png" alt="Pistachio pastry">
+    <img src="https://i.ibb.co/Ng6xwYSN/file-000000006dd8720792129b40d506e16f.png" alt="Cold brew">
+    <img src="https://i.ibb.co/Ng1BjRT5/file-00000000853872079901f4f7799d6688.png" alt="Croissant plated">
+  </div>
+</section>
+
+<!-- ===== WHY AURA (STACK) ===== -->
+<section class="section light" id="why">
+  <div class="container split reverse">
+    <div class="stack-wrap">
+      <div class="card-stack" id="cardStack">
+        <div class="stack-card" style="background:#161311;">
+          <span class="stack-num">01</span>
+          <h3>Ethically Sourced</h3>
+          <p>Direct-trade beans from growers we know by name.</p>
+        </div>
+        <div class="stack-card" style="background:#2A2420;">
+          <span class="stack-num">02</span>
+          <h3>Small-Batch Roasted</h3>
+          <p>Roasted weekly, never further out than that.</p>
+        </div>
+        <div class="stack-card" style="background:#C9A27E; color:#161311;">
+          <span class="stack-num">03</span>
+          <h3>Community First</h3>
+          <p>A room built to be sat in, not rushed through.</p>
+        </div>
+        <div class="stack-card" style="background:#1A1714;">
+          <span class="stack-num">04</span>
+          <h3>Quiet by Design</h3>
+          <p>No rush, no noise — just good coffee.</p>
+        </div>
+      </div>
+      <p class="stack-hint">Tap or drag the cards</p>
+    </div>
+    <div class="split-text reveal">
+      <span class="eyebrow">Why Aura</span>
+      <h2 class="section-title">Four things we<br>won't compromise on.</h2>
+      <p class="reveal-copy">
+        We kept our list short on purpose. Everything else follows from these.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section dark" id="testimonials">
+  <div class="container">
+    <span class="eyebrow">Testimonials</span>
+    <h2 class="section-title center">What people tell us</h2>
+    <div class="testi-stack" id="testiStack">
+      <div class="testi-card">
+        <img src="https://i.ibb.co/LDD3r5GX/file-00000000dd4472078f09f678caa39d59.png" alt="Customer avatar" class="testi-avatar">
+        <p>"The quietest, most beautiful cafe in the neighborhood. I do my best
+        thinking here."</p>
+        <span class="testi-name">— Aarav M.</span>
+      </div>
+      <div class="testi-card">
+        <img src="https://i.ibb.co/DPvnZpK0/file-000000004428720790256c7bc0c80b48.png" alt="Customer avatar" class="testi-avatar">
+        <p>"Their cold brew is unlike anything else in the city. Worth the
+        walk every time."</p>
+        <span class="testi-name">— Priya S.</span>
+      </div>
+      <div class="testi-card">
+        <img src="https://i.ibb.co/LDD3r5GX/file-00000000dd4472078f09f678caa39d59.png" alt="Customer avatar" class="testi-avatar">
+        <p>"Simple menu, done exceptionally well. The croissants alone are
+        worth the trip."</p>
+        <span class="testi-name">— Kabir R.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VISIT US ===== -->
+<section class="section light" id="visit">
+  <div class="container split">
+    <div class="split-text reveal">
+      <span class="eyebrow">Visit Us</span>
+      <h2 class="section-title">Come sit<br>a while.</h2>
+      <div class="visit-detail">
+        <span class="visit-label">Address</span>
+        <p>Bhavan's Vidya Bhavan Road,<br>Vidya Vihar (placeholder address)</p>
+      </div>
+      <div class="visit-detail">
+        <span class="visit-label">Phone</span>
+        <p>+91 98765 43210 (placeholder)</p>
+      </div>
+      <div class="visit-detail">
+        <span class="visit-label">Hours</span>
+        <p>Mon – Fri: 8:00 AM – 8:00 PM<br>Sat – Sun: 9:00 AM – 9:00 PM</p>
+      </div>
+    </div>
+    <div class="map-box">
+      <div class="map-placeholder">
+        <div class="map-pin">📍</div>
+        <span>Map placeholder — embed real location once confirmed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>AURA CAFE&nbsp;&nbsp;•&nbsp;&nbsp;FRESH DAILY&nbsp;&nbsp;•&nbsp;&nbsp;EST. 2024&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+      <span>AURA CAFE&nbsp;&nbsp;•&nbsp;&nbsp;FRESH DAILY&nbsp;&nbsp;•&nbsp;&nbsp;EST. 2024&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 Aura Cafe. All rights reserved.</span>
+    <span>Placeholder site — content and images pending client confirmation.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
