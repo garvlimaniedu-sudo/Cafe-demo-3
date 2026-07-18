@@ -34,12 +34,12 @@ mobileMenu.querySelectorAll('a').forEach(link => {
     r: 0.25 + Math.random() * 0.25,
     speed: 0.00015 + Math.random() * 0.0002,
     offset: Math.random() * Math.PI * 2,
-    hue: i % 2 === 0 ? 'rgba(201,162,126,' : 'rgba(30,25,20,'
+    hue: i % 2 === 0 ? 'rgba(72,152,99,' : 'rgba(20,28,45,'
   }));
 
   function draw(time) {
     ctx.clearRect(0, 0, w, h);
-    ctx.fillStyle = '#0F0D0B';
+    ctx.fillStyle = '#0A0E16';
     ctx.fillRect(0, 0, w, h);
 
     blobs.forEach(b => {
@@ -125,7 +125,7 @@ galleryTrack.addEventListener('mousemove', e => {
   galleryTrack.scrollLeft = scrollLeftStart - walk;
 });
 
-// ===== CARD STACK (Why Aura) — click/drag top card to send to back =====
+// ===== CARD STACK (Why Fresh Bite) — click/drag top card to send to back =====
 const cardStack = document.getElementById('cardStack');
 function layoutStack() {
   const cards = Array.from(cardStack.children);
@@ -148,8 +148,8 @@ cardStack.querySelectorAll('.stack-card').forEach(card => {
 const pillNav = document.getElementById('pillNav');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 40) {
-    pillNav.style.background = 'rgba(15, 13, 11, 0.92)';
+    pillNav.style.background = 'rgba(10, 14, 22, 0.92)';
   } else {
-    pillNav.style.background = 'rgba(15, 13, 11, 0.7)';
+    pillNav.style.background = 'rgba(10, 14, 22, 0.7)';
   }
 });
