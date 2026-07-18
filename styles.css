@@ -1,13 +1,13 @@
 /* ===== TOKENS ===== */
 :root {
-  --bg-dark: #0F0D0B;
-  --bg-card: #1A1714;
-  --bg-light: #F5F1EA;
-  --gold: #C9A27E;
-  --gold-bright: #D4AF37;
-  --text-warm: #EDE7DD;
-  --text-dark: #161311;
-  --text-muted: #A69C8D;
+  --bg-dark: #0A0E16;
+  --bg-card: #17202E;
+  --bg-light: #F2F6F3;
+  --gold: #489863;
+  --gold-bright: #6CB989;
+  --text-warm: #EDF2EE;
+  --text-dark: #16233A;
+  --text-muted: #94A0AE;
   --serif: 'Fraunces', serif;
   --sans: 'Inter', sans-serif;
 }
@@ -432,7 +432,7 @@ a { text-decoration: none; color: inherit; }
   -webkit-user-drag: none;
 }
 
-/* ===== STACK (Why Aura) ===== */
+/* ===== STACK (Why Fresh Bite) ===== */
 .stack-wrap { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
 
 .card-stack {
@@ -524,7 +524,7 @@ a { text-decoration: none; color: inherit; }
 
 .map-placeholder {
   height: 100%;
-  background: linear-gradient(135deg, #1A1714, #0F0D0B);
+  background: linear-gradient(135deg, #17202E, #0A0E16);
   display: flex;
   flex-direction: column;
   align-items: center;
